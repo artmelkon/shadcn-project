@@ -1,6 +1,6 @@
 import React from "react";
 import { Greeting } from "../../components/greeting";
-import { MainMenu } from "../../components/mainmenu";
+import { MainMenu } from "../../components/menu/mainmenu";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
