@@ -28,7 +28,7 @@ export const WorkLocationTrends = () => {
             if (name === "wfh") return [value, "work from home"];
             else if (name === "office") return [value, "work from office"];
           }}
-          wrapperClassName="!text-sm dark:!bg-black rounded-md dark:!border-borde r"
+          wrapperClassName="!text-sm dark:!bg-black rounded-md dark:!border-border"
         />
         <Legend
           iconType="circle"
