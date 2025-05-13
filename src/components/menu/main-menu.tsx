@@ -1,11 +1,14 @@
 import { MenuTitle } from "./menu-title";
 import { MenuItem } from "./menu-item";
 import { MenuFooter } from "./menu-footer";
+import { cn } from "@/lib/utils";
 
-export const MainMenu = () => {
+export const MainMenu = ({ className }: { className?: string }) => {
   return (
-    <header className="bg-muted overflow-auto p-4 flex flex-col">
-      <div className="border-b dark:border-b-black border-b-zinc-300 pb-4">
+    <header
+      className={cn("md:bg-muted overflow-auto p-4 flex flex-col", className)}
+    >
+      <div className="hidden md:block border-b dark:border-b-black border-b-zinc-300 pb-4">
         <MenuTitle />
       </div>
       <nav className="py-4 grow">
